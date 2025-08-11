@@ -1,22 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar container */
 .navbar {
-    position: sticky !important;
-    top: 10px !important ;
-    font-size: 60px;
-    
+    background-color: white; /* Navbar background */
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Flex container for links */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Space between links */
+}
+
+/* Styling links */
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Responsive: Stack links on small screens */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .container{
-    background-image: url(/images/cat.jpg);
+   
     background-size: cover;
     background-position: center;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(227, 219, 219);
-    font-size: 100px;
+    color: rgb(3, 3, 3);
+    font-size: 30px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1.5px 2.5px rgba(0, 0, 0, 0.5);
    
+}
+
+/* book Lists */
+
+.book-list {
+    list-style: none;       /* Remove bullets */
+    display: flex;          /* Put items side by side */
+    flex-wrap: wrap;        /* Move to next line if screen is small */
+    gap: 20px;              /* Space between items */
+    padding: 0;
+    justify-content: center; /* Center items */
+}
+
+.book-list li {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 6px 9px rgba(0,0,0,0.2);
+    width: 240px;           /* Fixed width for all boxes */
+    text-align: center;
+}
+
+.book-list img {
+    width: 100%;            /* Image fills box */
+    height: 290px;          /* Same height for all */
+    border-radius: 6px;
+}
+
+.book-list li:hover{
+    height: 330px ;
+    transition: transform 0.5s ease;
+     transform: scale(1.1);
+}
+.book-list h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(43, 62, 69);
+}
+
+.book-list a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Use normal text color */
+}
+
+.flex-items img{
+   
+    margin: 10px;
+    height: 250px;
+    width: 200px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 15px 13px 8px rgba(2, 2, 2, 0.5);
+    transition: transform 0.3s ease;
+    
+
+}
+.flex-items img:hover{
+    height: 260px;
+    width: 210px;
+     transition: transform 0.8s ease;
+    transform: scale(1.099);
+  
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    list-style: none;
+     
+}
+
+.flex-items p {
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container li {
+     background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 6px 9px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    margin: 15px;
+    width: 240px;           /* Fixed width for all boxes */
+    text-align: center;
+   
+    
 }
 
